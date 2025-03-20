@@ -11,24 +11,49 @@ Git (optional, for cloning the repository)
 Windows OS (for sound alerts; macOS/Linux users can skip sound features).
 
 Installation
-Clone the Repository:
+1. Clone the Repository:
+   ```cmd
+   git clone https://github.com/yourusername/gamified-task-manager.git
+   cd gamified-task-manager
 
-git clone https://github.com/yourusername/gamified-task-manager.git
-cd gamified-task-manager
+2. Set Up a Virtual Environment (recommended):
+   ```cmd
+   python -m venv venv
+3. Activate the environment:
+   ```cmd
+   .\venv\Scripts\activate
+4. Install Dependencies:
+   ```cmd
+   pip install peewee rich
 
-Set Up a Virtual Environment (recommended):
+5. Running the Project
+   ```cmd
+   python task_manager.py
 
-python -m venv venv
-# Activate the environment:
-# Windows:
-.\venv\Scripts\activate
-# macOS/Linux:
-source venv/bin/activate
+Usage
+1. Main Menu:
+   Choose options using number keys (1 to 5).
+   Example: Press 1 to add a task, 2 to start a task timer.
 
-Install Dependencies:
+2. Add a Task:
+   Enter task name, duration (HH:MM:SS), and recurrence (daily/weekly).
 
-pip install peewee rich
+3. Start a Task:
+   Select a task from the list to start its timer. A progress bar will show live updates.
 
-Running the Project
+4. View Progress:
+   Check your XP, level, and active tasks.
 
-#python task_manager.py
+5. Sound Alerts (Windows only):
+   A beep will play on task completion and level-up.
+
+Testing
+
+1. Add a test task (e.g., "Write Documentation", duration 00:05:00).
+2. Start the task and let the timer run. You’ll earn XP and level up after completion.
+
+Troubleshooting
+
+1. ModuleNotFoundError: Ensure dependencies are installed (pip install peewee rich).
+2. Sound Issues: On non-Windows systems, comment out winsound code in task_manager.py.
+3. Database Issues: Delete tasks.db to reset progress.
