@@ -10,6 +10,7 @@ Git (optional, for cloning the repository)
 
 Windows OS (for sound alerts; macOS/Linux users can skip sound features).
 
+
 Installation
 1. Clone the Repository:
    ```cmd
@@ -30,6 +31,7 @@ Installation
    ```cmd
    python task_manager.py
 
+
 Usage
 1. Main Menu:
    Choose options using number keys (1 to 5).
@@ -47,10 +49,12 @@ Usage
 5. Sound Alerts (Windows only):
    A beep will play on task completion and level-up.
 
+
 Testing
 
 1. Add a test task (e.g., "Write Documentation", duration 00:05:00).
 2. Start the task and let the timer run. You’ll earn XP and level up after completion.
+
 
 Troubleshooting
 
